@@ -9,6 +9,7 @@ export default function Home() {
 
             <View style={styles.top}>
 
+                <Image source={require:''}/>   teste
 
 
                 <Text>Home</Text>
