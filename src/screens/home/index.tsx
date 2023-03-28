@@ -1,16 +1,27 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image } from 'react-native';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image, FlatList } from 'react-native';
+import { Participant } from './components/participant/participant';
 import { styles } from './style';
 
-
-
 export default function Home() {
+
+    const participants = ['arrozsdfhsjdfhsdjfhsdjfhjshfjshfjshfjshdfjshdfjshdfjsdhfjsahfjsdhfjshfjs']
+
+    function handleAddParticipant() {
+        console.log("voce adicionou um participant");
+    }
+
+    function handleRemoveParticipant() {
+        console.log("voce clicou em remover");
+    }
     return (
+
         <View style={styles.container}>
 
             <View style={styles.top}>
-
-                <Image source={require:''}/>   teste
-
+                <View style={styles.todo}>
+                    <Text style={styles.to}>to</Text>
+                    <Text style={styles.do}>do</Text>
+                </View>
 
                 <Text>Home</Text>
             </View>
@@ -23,17 +34,51 @@ export default function Home() {
                         placeholder="Adicione uma nova tarefa."
                         placeholderTextColor={'#808080'} />
 
-                    <TouchableOpacity style={styles.buttonText}>
-                        <Text>
+                    <TouchableOpacity style={styles.buttonText} onPress={handleAddParticipant}>
+                        <Text style={styles.icon}>
                             +
                         </Text>
                     </TouchableOpacity>
                 </View>
 
+                <View style={styles.contagem}>
+                    <Text style={styles.elemento1}>
+                        Criadas
+                    </Text>
+                    <Text style={styles.elemento2}>
+                        Concluidas
+                    </Text>
+                </View>
+
+                <FlatList
+                    data={participants}
+                    keyExtractor={item => item}
+                    renderItem={({ item }) => (
+                        <Participant
+                            key={item}
+                            name={item}
+                            onRemove={() => handleRemoveParticipant}
+                        />
+
+                    )}
+                    showsVerticalScrollIndicator={false}
+                    ListEmptyComponent={() => (
+                        <View style={styles.listEmptyText0}>
+                            <Text style={styles.listEmptyText1}>
+                                Você ainda não tem tarefas cadastradas
+                            </Text>
+
+                            <Text style={styles.listEmpytText2}>
+                                Crie tarefas e organize seus itens a fazer
+                            </Text>
+                        </View >
+
+                    )}
+                />
+
             </View>
 
-        </View>
+        </View >
 
     );
 }
-

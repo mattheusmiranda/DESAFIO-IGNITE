@@ -1,5 +1,7 @@
 
 import { StyleSheet } from "react-native"
+import { Colors } from "react-native/Libraries/NewAppScreen";
+
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -21,7 +23,6 @@ export const styles = StyleSheet.create({
         marginBottom: 42
     },
     input: {
-
         flex: 0.9,
         height: 56,
         backgroundColor: '#262626',
@@ -42,7 +43,60 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
+    todo: {
+        flexDirection: 'row',
+        marginTop: 32,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    to: {
+        color: '#4EA8DE',
+        fontWeight: '800',
+        fontSize: 42
+    },
+    do: {
+        fontWeight: 'bold',
+        color: '#8284FA',
+        fontSize: 42
+    },
+    icon: {
+        fontSize: 25
+    },
+    contagem: {
+        flexDirection: 'row',
 
+    },
+    elementos: {
+        position: 'relative',
+    },
+    elemento1: {
+        fontWeight: 'bold',
+        marginTop: -18,
+        fontSize: 17,
+        color: '#4EA8DE',
+        marginLeft: 15
+    },
+    elemento2: {
+        fontWeight: 'bold',
+        marginTop: -18,
+        fontSize: 17,
+        color: '#8284FA',
+        marginLeft: 170
+    },
+    listEmptyText0: {
+        marginTop: 134,
+        alignItems: 'center',
+    },
+    listEmptyText1: {
+        fontSize: 17,
+        color: '#808080',
+        fontWeight: "bold",
+
+    },
+    listEmpytText2: {
+        color: '#808080',
+        fontSize: 15
+    }
 
 });
 
