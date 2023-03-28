@@ -4,7 +4,8 @@ import { styles } from './style';
 
 export default function Home() {
 
-    const participants = ['arrozsdfhsjdfhsdjfhsdjfhjshfjshfjshfjshdfjshdfjshdfjsdhfjsahfjsdhfjshfjs']
+    const participants = ['arrozsdfhsjdfhsdjfhsdjfhjshfjshfjshfjshdfjshdfjshdfjsdhfjsahfjsdhfjshfjs', 'arrozsdfhsjdfhsdjfhsdjfhjshfjshfjshfjshdfjshdfjshdfjsdhfjsahfjsdhfjshfjso',
+        'n']
 
     function handleAddParticipant() {
         console.log("voce adicionou um participant");
@@ -45,9 +46,11 @@ export default function Home() {
                     <Text style={styles.elemento1}>
                         Criadas
                     </Text>
+                    <Text style={styles.idtContagem}>6</Text>
                     <Text style={styles.elemento2}>
                         Concluidas
                     </Text>
+                    <Text style={styles.idtContagem}>6</Text>
                 </View>
 
                 <FlatList

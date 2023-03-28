@@ -33,7 +33,6 @@ export const styles = StyleSheet.create({
         marginRight: 12,
         marginLeft: 15,
     },
-
     buttonText: {
         color: '#ffffff',
         height: 56,
@@ -81,7 +80,7 @@ export const styles = StyleSheet.create({
         marginTop: -18,
         fontSize: 17,
         color: '#8284FA',
-        marginLeft: 170
+        marginLeft: 125
     },
     listEmptyText0: {
         marginTop: 134,
@@ -96,6 +95,17 @@ export const styles = StyleSheet.create({
     listEmpytText2: {
         color: '#808080',
         fontSize: 15
+    },
+    idtContagem: {
+        backgroundColor: '#333333',
+        marginLeft: 15,
+        marginTop: -15,
+        width: 25,
+        height: 20,
+        textAlign: 'center',
+        justifyContent: "center",
+        color: '#D9D9D9',
+        borderRadius: 10
     }
 
 });
