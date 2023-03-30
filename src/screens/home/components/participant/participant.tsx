@@ -16,8 +16,8 @@ export function Participant({ name, onRemove }: Props) {
         <View style={styles.container}>
             <View style={styles.isideContainer}>
                 <CheckBox
-                    checkedIcon={"dot-circle-o"}
-                    uncheckedIcon={"check"}
+                    checkedIcon={"check"}
+                    uncheckedIcon={"dot-circle-o"}
                     checkedColor={"#5E60CE"}
                     uncheckedColor={"#4EA8DE"}
                     checked={isSelected}
