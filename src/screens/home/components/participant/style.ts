@@ -32,8 +32,9 @@ export const styles = StyleSheet.create({
         alignItems: 'center'
     },
     buttonText: {
-        color: '#fff',
-        fontSize: 30
+        color: '#808080',
+        fontSize: 17,
+        marginRight: 11
     },
     checked: {
         padding: 0,

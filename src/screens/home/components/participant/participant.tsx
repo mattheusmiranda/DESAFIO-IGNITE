@@ -2,6 +2,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import { styles } from "./style";
 import { CheckBox } from 'react-native-elements';
 import { useState } from "react";
+import FontAwesomeIcon from 'react-native-vector-icons/Feather';
 
 type Props = {
     name: string;
@@ -24,7 +25,9 @@ export function Participant({ name, onRemove }: Props) {
                 />
                 <Text style={styles.name}>{name}</Text>
                 <TouchableOpacity style={styles.button} onPress={onRemove}>
-                    <Text style={styles.buttonText}>-</Text>
+
+                    <FontAwesomeIcon name={'trash-2'} style={styles.buttonText} />
+
                 </TouchableOpacity>
             </View>
         </View>

@@ -1,11 +1,13 @@
+import React from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View, Image, FlatList } from 'react-native';
 import { Participant } from './components/participant/participant';
 import { styles } from './style';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 export default function Home() {
 
-    const participants = ['arrozsdfhsjdfhsdjfhsdjfhjshfjshfjshfjshdfjshdfjshdfjsdhfjsahfjsdhfjshfjs', 'arrozsdfhsjdfhsdjfhsdjfhjshfjshfjshfjshdfjshdfjshdfjsdhfjsahfjsdhfjshfjso',
-        'n']
+    const participants = ['arroz', 'arroz doce', 'batata doce']
 
     function handleAddParticipant() {
         console.log("voce adicionou um participant");
@@ -20,6 +22,9 @@ export default function Home() {
 
             <View style={styles.top}>
                 <View style={styles.todo}>
+                    <FontAwesome name="rocket"
+                        style={styles.img}
+                    />
                     <Text style={styles.to}>to</Text>
                     <Text style={styles.do}>do</Text>
                 </View>
@@ -36,9 +41,9 @@ export default function Home() {
                         placeholderTextColor={'#808080'} />
 
                     <TouchableOpacity style={styles.buttonText} onPress={handleAddParticipant}>
-                        <Text style={styles.icon}>
-                            +
-                        </Text>
+
+                        <Icon name="add-circle-outline" style={styles.icon} />
+
                     </TouchableOpacity>
                 </View>
 

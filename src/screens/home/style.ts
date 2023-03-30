@@ -45,21 +45,23 @@ export const styles = StyleSheet.create({
     todo: {
         flexDirection: 'row',
         marginTop: 32,
+        padding: 12,
         alignItems: 'center',
         justifyContent: 'center',
     },
     to: {
-        color: '#4EA8DE',
-        fontWeight: '800',
-        fontSize: 42
+        color: '#42a3df',
+        fontWeight: 'bold',
+        fontSize: 55
     },
     do: {
         fontWeight: 'bold',
-        color: '#8284FA',
-        fontSize: 42
+        color: '#6f72ff',
+        fontSize: 55
     },
     icon: {
-        fontSize: 25
+        fontSize: 22,
+        color: 'white'
     },
     contagem: {
         flexDirection: 'row',
@@ -106,7 +108,13 @@ export const styles = StyleSheet.create({
         justifyContent: "center",
         color: '#D9D9D9',
         borderRadius: 10
-    }
+    },
+    img: {
+        color: '#2023d6',
+        fontSize: 35,
+        marginTop: 10,
+        marginRight: 10
+    },
 
 });
 
