@@ -10,7 +10,8 @@ export default function Home() {
     const [participants, setParticipants] = useState<string[]>([]);
     const [participantName, setParticipantName] = useState('');
     const [numConcluidas, setNumConcluidas] = useState(0);
-
+    const [allItems, setAllItems] = useState<string[]>([]);
+    const [selectedItems, setSelectedItems] = useState<string[]>([]);
 
     function handleAddParticipant() {
         if (participants.includes(participantName)) {
@@ -44,9 +45,6 @@ export default function Home() {
         ]);
     }
 
-    const [allItems, setAllItems] = useState<string[]>([]);
-    const [selectedItems, setSelectedItems] = useState<string[]>([]);
-
     function handleSelectItem(itemName: string) {
         if (selectedItems.includes(itemName)) {
             setSelectedItems((prevState) => prevState.filter((item) => item !== itemName));
@@ -56,8 +54,6 @@ export default function Home() {
             setNumConcluidas((prevState) => prevState + 1);
         }
     }
-
-
 
     return (
         <View style={styles.container}>
