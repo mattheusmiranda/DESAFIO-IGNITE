@@ -66,6 +66,7 @@ export const styles = StyleSheet.create({
     contagem: {
         flexDirection: 'row',
 
+
     },
     elementos: {
         position: 'relative',
@@ -75,23 +76,26 @@ export const styles = StyleSheet.create({
         marginTop: -18,
         fontSize: 17,
         color: '#4EA8DE',
-        marginLeft: 15
+        marginLeft: 15,
+        marginRight: 1
     },
     elemento2: {
+
         fontWeight: 'bold',
         marginTop: -18,
         fontSize: 17,
         color: '#8284FA',
-        marginLeft: 125
+        marginLeft: 170
     },
     listEmptyText0: {
-        marginTop: 134,
+        marginTop: 70,
         alignItems: 'center',
     },
     listEmptyText1: {
         fontSize: 17,
         color: '#808080',
         fontWeight: "bold",
+        marginTop: 10
 
     },
     listEmpytText2: {
@@ -115,6 +119,22 @@ export const styles = StyleSheet.create({
         marginTop: 10,
         marginRight: 10
     },
+    flatListContainer: {
+        flex: 1,
+    },
+    icons: {
+        fontSize: 60,
+        color: "#ffff",
+    },
+    separator: {
+        height: 0.8,
+        width: '90%',
+        backgroundColor: '#CED0CE',
+        marginVertical: 10,
+        marginLeft: 18
+
+    },
+
 
 });
 
